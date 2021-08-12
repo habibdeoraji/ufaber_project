@@ -1,0 +1,322 @@
+body {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 0;
+    width: 100vw;
+}
+
+#pathshala_main_header {
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+
+#pathshala_page_wrapper {
+    border-radius: 20px;
+    width: 60%;
+    margin: 40px auto;
+    box-shadow: 1px 2px 4px 4px rgb(236, 236, 236);
+
+}
+
+
+#pathshala_page_wrapper h1 {
+    text-align: center;
+    background-color: #ffebe5;
+    padding: 30px 170px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#pathshala_page {
+    display: flex;
+    align-items: center;
+
+}
+
+#pathshala_page p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1
+}
+
+#pathshala_page h3 {
+    margin-bottom: 30px;
+}
+
+.path_icon {
+    margin-right: 10px;
+}
+
+#pathshala_page_content {
+    text-align: left;
+}
+
+
+/* Our start Students */
+.students_card {
+    display: flex;
+    background-color: rgb(155, 161, 163);
+    width: 40%;
+    margin: 10px auto;
+    flex-direction: column;
+    padding: 40px 50px;
+    border-radius: 10px;
+    color: white;
+    background-image: linear-gradient(to right, #443ee9, #8d14ff);
+}
+
+.students_performance {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.students_performance p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.user_avatar {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.testimonials {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 1px
+}
+
+/* Success stories video container */
+#video_container {
+    box-sizing: border-box;
+    width: 40%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+#video_frame {
+    border-radius: 5px;
+    border: 10px solid rgba(220, 216, 216, 0.5);
+}
+
+
+/* Newest features */
+#newest_features {
+    width: 100%;
+    display: flex;
+    background-color: #ffece5;
+    margin-top: 60px;
+    padding: 10px 20%;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.2
+}
+
+#newest_features div {
+    text-align: right;
+}
+
+#newest_features_mobile {
+    display: none;
+}
+
+#newest_features button {
+    background-image: linear-gradient(to right, #443ee9, #8d14ff);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 12px 45px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    margin: 20px 0;
+}
+
+#newest_features h2 {
+    margin-bottom: 10px;
+}
+
+.download_icon {
+    margin-right: 10px;
+}
+
+
+/* Product/ final page */
+#product_page {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+#product_left_column,
+#product_right_column {
+    display: flex;
+    flex-direction: column;
+}
+
+#product_left_column {
+    text-align: right;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+#product_right_column {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.prod_first_row,
+.prod_second_row,
+.prod_third_row {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.prod_first_row {
+    width: 200px;
+}
+
+.prod_second_row {
+    width: 240px;
+}
+
+.prod_third_row {
+    width: 280px;
+}
+
+#product_page a {
+    width: 130px;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+
+#product_left_column_button {
+    padding: 8px 12px;
+    background-color: #ff7900
+}
+
+#product_right_column_button {
+    padding: 8px 12px;
+    background-color: #fe0000
+}
+
+.fa-globe,
+.fa-youtube {
+    margin-right: 10px;
+}
+
+
+/* Responsive  */
+@media only screen and (max-width: 832px) {
+    body {
+        padding-top: 20px;
+    }
+
+    #pathshala_main_header {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    #pathshala_page_wrapper h1 {
+        font-size: 16px;
+        padding: 10px 10%;
+
+    }
+
+
+    #pathshala_page_wrapper {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    #pathshala_page {
+        flex-direction: column;
+    }
+
+    #pathshala_page:nth-child(2) {
+        padding: 10px 60px;
+        font-size: 8px;
+        letter-spacing: 0.6px
+    }
+
+
+    /* Our star students */
+    .students_card {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .students_performance p {
+        font-size: 1rem;
+    }
+
+    .students_performance h3 {
+        font-size: 1rem
+    }
+
+    .testimonials {
+        margin-top: 10px;
+        font-size: 1rem;
+        letter-spacing: 1px
+    }
+
+
+    #video_container {
+        width: 90%;
+    }
+
+
+    #newest_features {
+        flex-direction: column;
+    }
+
+    .newest_features_big_screen {
+        display: none;
+    }
+
+    #newest_features div {
+        text-align: center;
+    }
+
+    #newest_features_mobile {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .prod_first_row {
+        width: 140px;
+    }
+
+    .prod_second_row {
+        width: 170px;
+    }
+
+    .prod_third_row {
+        width: 200px;
+    }
+
+    .prod_first_row,
+    .prod_second_row,
+    .prod_third_row {
+        font-size: 12px;
+    }
+
+
+
+}

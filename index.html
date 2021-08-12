@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>uFaber</title>
+</head>
+
+<body>
+    <div id="left_column">
+        <p><span style="font-weight: 500;">UPSC</span> <span style="font-weight: 300;">PATHSHALA</span></p>
+        <h1>Best Online Coaching for UPSC Preparation</h1>
+        <div>
+            <img src="./images/ufaber_homepage_image.png" alt="ufaber_homepage_image">
+        </div>
+
+    </div>
+    <div id="right_column">
+        <div id="demo_form_text">
+            <h2>Book a Free Demo Class</h2>
+            <p>Limited Seats only !</p>
+        </div>
+        <form action="/home.html" id="demo_form">
+            <div class="input_group">
+                <label for="contact_number" id="contact_number_label">Mobile Number</label>
+                <span id="contact_number_prefix" disabled>+91- </span>
+                <input type="text" id="contact_number" name="contact_number" placeholder="Enter Mobile Number" required
+                    maxlength="10" onkeypress="return isNumber(event)"><br>
+                <p id="contact_number_error_message">Please enter a valid mobile number</p>
+            </div>
+
+            <div class="input_group">
+                <label for="full_name" id="full_name_label">Full Name</label>
+                <input type="text" id="full_name" name="full_name" placeholder="Enter Full Name" required><br>
+                <p id="full_name_error_message">Please enter a valid name</p>
+            </div>
+
+            <div class="input_group">
+                <label for="user_email" id="user_email_label"> E-mail ID</label>
+                <input type="email" id="user_email" name="user_email" placeholder="Enter E-mail ID" required><br>
+                <p id="user_email_error_message">Please enter a valid name</p><br>
+            </div>
+
+            <label for="user_status">What describes you best?</label><br>
+            <select name="user_status" id="user_status" required>
+                <option disabled selected value="" style="opacity: 0.6">Select options</option>
+                <option value="volvo" style="background-color: red">College Student</option>
+                <option value="saab">Working Professional</option>
+                <option value="opel">Full time aspirant</option>
+                <option value="audi">Other</option>
+            </select><br>
+            <input type="submit" value="Submit" id="demo_form_button">
+            <p id="demo_form_terms">By clicking 'Submit' button, you explicitly solicit a call and email from uFaber</p>
+        </form>
+
+    </div>
+
+    <div id="image_for_mobile">
+        <img src="./images/ufaber_homepage_image.png" alt="ufaber_homepage_image">
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

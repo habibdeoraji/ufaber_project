@@ -1,0 +1,204 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    background-color: #fff5f2;
+    height: 100vh;
+    padding: 40px 10%;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+/* Left Column */
+#left_column {
+    width: 36%;
+}
+
+#left_column p {
+    font-size: 24px;
+}
+
+#left_column h1 {
+    letter-spacing: 2px;
+    line-height: 1.5
+}
+
+#left_column img {
+    width: 100%;
+    margin-right: 50px;
+}
+
+/* Right Column */
+#right_column {
+    background: #ffffff;
+    border-radius: 20px;
+    width: 36%;
+    margin-left: 50px;
+    min-height: 60vh;
+    padding: 20px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#demo_form_text {
+    text-align: center;
+}
+
+#demo_form_text h2 {
+    margin: 0px;
+}
+
+#demo_form_text p {
+    color: red;
+    margin-top: 5px;
+}
+
+
+
+/* Label */
+#contact_number_label,
+#full_name_label,
+#user_email_label {
+    background-color: #ffffff;
+    margin-left: 14px;
+    position: absolute;
+    top: 8px;
+    width: fit-content;
+    padding: 0 6px;
+    display: none;
+}
+
+
+#contact_number_prefix {
+    position: absolute;
+    top: 30px;
+    left: 12px;
+}
+
+#demo_form #contact_number {
+    padding-left: 45px;
+}
+
+#demo_form input,
+#demo_form select {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 16px 0;
+    outline: none;
+
+}
+
+#demo_form input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+#demo_form p {
+    text-align: center;
+    padding: 16px
+}
+
+#demo_form_button {
+    cursor: pointer
+}
+
+
+
+
+/* Validation */
+
+.input_group {
+    position: relative;
+
+}
+
+
+
+#contact_number_error_message,
+#full_name_error_message,
+#user_email_error_message {
+    position: absolute;
+    top: 30px;
+    left: -15px;
+    display: none;
+    color: red;
+    font-size: 14px;
+}
+
+
+/* Demo button */
+
+#demo_form_button {
+    margin: 0 !important;
+    background-image: linear-gradient(to right, #443ee9, #8d14ff);
+    opacity: 0.5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+#demo_form_terms {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: gray;
+}
+
+
+/* Image for mobile */
+
+#image_for_mobile {
+    display: none;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 832px) {
+    body {
+        flex-direction: column;
+        width: auto;
+        padding: 20px 5%;
+        height: fit-content;
+        align-items: center;
+    }
+
+    #left_column {
+        width: 90%;
+    }
+
+    #left_column h1 {
+        text-align: center;
+        margin: 0 0 20px 0;
+        font-size: 14px;
+        padding: 0
+    }
+
+    #left_column p {
+        text-align: center;
+        margin: 5px;
+        padding: 0
+    }
+
+    #left_column img {
+        display: none;
+    }
+
+
+    #right_column {
+        width: 90%;
+        margin: 0
+    }
+
+    #image_for_mobile {
+        display: block;
+        padding: 5%
+    }
+
+    #image_for_mobile img {
+        width: 100%;
+    }
+}
